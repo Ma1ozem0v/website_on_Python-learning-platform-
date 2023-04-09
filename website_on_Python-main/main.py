@@ -93,11 +93,6 @@ def kolebania():
         return file.read()
 
 
-@app.route('/subjects', methods=['GET', 'POST'])
-def subjects():
-    return render_template('subjects.html')
-
-
 @app.route('/logout')
 @login_required
 def logout():
