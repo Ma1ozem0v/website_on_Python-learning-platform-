@@ -19,7 +19,6 @@ def load_user(id):
     return db_sess.query(User).get(id)
 
 
-
 @app.route('/')
 def index():
     session = db_session.create_session()
